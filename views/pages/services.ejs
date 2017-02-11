@@ -5,7 +5,27 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
-<h1><%= title %></h1>
-<p>Welcome to <%= title %></p>
+<div class='wrapper'>
+    <%- include('../partials/menu') %>
+
+    <h1>These are</h1>
+    <ul class="services-list">
+        <li>
+            <h3>Back-end</h3>
+            <p>
+                .NET, NodeJS
+
+                Also VB, but who cares.
+            </p>
+        </li>
+        <li>
+            <h3>
+
+            </h3>
+        </li>
+    </ul>
+
+    <%- include('../partials/footer') %>
+</div>
 </body>
 </html>

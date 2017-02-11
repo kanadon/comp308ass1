@@ -5,7 +5,39 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
-<h1><%= title %></h1>
-<p>Welcome to <%= title %></p>
+<div class='wrapper'>
+    <%- include('../partials/menu') %>
+
+    <ul class="projects-list">
+        <li>
+            <h3>Drunk As F***</h3>
+            <p>
+                <a href="https://dafapp.azurewebsites.net">https://dafapp.azurewebsites.net</a>
+            </p>
+            <p>
+                This web app was made specifically for students that want the best bang for their buck when
+                it comes to alcoholic beverages. Search results are sorted based on the alcohol content to price ratio.
+                The lower the ratio, the more efficient the drink. Also, only products available in nearby stores within
+                a given radius are shown. The stores for any given product can be viewed on a map.
+            </p>
+
+            <h4>Technologies used:</h4>
+            <ul>
+                <li>NodeJS (with Jade/Pug templating engine and Stylus CSS preprocessor; hosted on Azure)</li>
+                <li>MongoDB (hosted on MongoLab)</li>
+                <li><a href="https://lcboapi.com/">LCBO API</a></li>
+                <li><a href="https://developers.google.com/maps/documentation/geocoding/intro">Google Geocoding API</a></li>
+                <li><a href="https://developers.google.com/maps/">Google Maps API</a></li>
+            </ul>
+            <p>
+                It retrieves info for each product, using the API, and stores it in its database. This is decrease the
+                number of API requests. The API, however, is still used to find info about stores within a
+                radius/address.
+            </p>
+        </li>
+    </ul>
+
+    <%- include('../partials/footer') %>
+</div>
 </body>
 </html>

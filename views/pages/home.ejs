@@ -5,7 +5,42 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
-<h1><%= title %></h1>
-<p>Welcome to <%= title %></p>
+    <div class='wrapper'>
+        <%- include('../partials/menu') %>
+
+        <h1>Welcome</h1>
+        <p>My name is Denis Doubovtsev. I'm a student at Centennial College and this is my impressive portfolio.</p>
+
+        <div>
+            <ul class="cta-list">
+                <li>
+                    <a href="/projects">
+                        <span>Projects</span>
+                        <img src="/images/projects.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="/services">
+                        <span>Services</span>
+                        <img src="/images/services.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="/about-me">
+                        <span>About Me</span>
+                        <img src="/images/about-me.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="/contact-me">
+                        <span>Contact Me</span>
+                        <img src="/images/contact-me.jpg" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <%- include('../partials/footer') %>
+    </div>
 </body>
 </html>
